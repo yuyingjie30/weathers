@@ -1,0 +1,472 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	position: relative;
+}
+header{
+	width: 7.5em;
+	height: 0.96em;
+	background: white;
+	/*text-align: center;*/
+	line-height: 0.6rem;
+}
+header>span{
+	font-size: 0.4rem;
+	margin-left: 0.38rem;
+}
+.imgs{
+	width: 7.5rem;
+	height: 9.52rem;
+	/*background: #0086B3;*/
+	background-image: linear-gradient(0deg, #40c1f2 26%, #3ab5ef 94%);
+		position: relative;
+}
+.imgs img{
+	width: 7.5rem;
+	height: 2rem;
+	position: absolute;
+	left: 0;
+	bottom:0;
+}
+.info{
+	width: 1.46em;
+	height: 0.86em;
+	background: orange;
+	border-radius: 0.15rem;
+	position: absolute;
+	top: 1.2rem;
+	left: 0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+	/*font-size: 0.2rem;*/
+}
+.info>p{
+	color: white;
+	font-size: 0.25rem;
+	font-weight: 300;
+}
+.info>h4{
+	color: white;
+	font-size: 0.2rem;
+	font-weight: 300;
+}
+.imgs-top{
+	width: 7.5rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	padding: 0 0.2rem;
+/*	background: aquamarine;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-center>i{
+	color: white;
+}
+.top-center>span{
+	font-size: 0.4rem;
+	color: white;
+}
+/*.top-right{
+	width: 0.44em;
+	height: 0.46em;
+	background: aliceblue;
+}*/
+.top-right>i{
+	font-size: 0.6rem;
+	float: left;
+}
+.top-right{
+	width: 0.6rem;
+	height: 0.6rem;
+	/*background: #FFA500;*/
+	position: relative;
+}
+.top-right img{
+	width: 0.6em;
+	height: 0.6em;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.imgs-center{
+	width: 3.2rem;
+	height: 3.52em;
+/*	background: orange;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+.imgs-center>h1{
+	font-size: 1rem;
+	color: white;
+	margin-left: 0.65rem;
+}
+.imgs-center>p{
+	font-size: 0.4rem;
+	color: white;
+	opacity: 0.8;
+}
+p.one{
+	display: block;
+	width: 3.2rem;
+	height: 0.6rem;
+	font-size: 0.6rem;
+	opacity: 1;
+}
+.center{
+	width: 100%;
+	height:2rem;
+/*	background: aquamarine;*/
+	padding: 0.48rem 0;
+}
+.weather-info{
+	width: 1.38em;
+	height: 1rem;
+	/*background: blue;*/
+	float: left;
+}
+.weather-info>p{
+	font-size: 0.3rem;
+}
+.weather-right{
+	width: 1.38em;
+	height: 1rem;
+/*	background: blue;*/
+	float: left;
+	margin-left: 0.25rem;
+}
+.weather-right img{
+	width: 0.4rem;
+	height: 0.4rem;
+	float: left;
+}
+.weather-right>p{
+	font-size: 0.3rem;
+}
+.sun{
+	width: 0.3em;
+	height: 0.3em;
+	border-radius: 50%;
+	background: #FFD54F;
+	margin: 0.2rem 0.6rem;
+}
+.center>ul>li{
+	width: 3.3em;
+	height: 0.94em;
+	margin-left: 0.38rem;
+	border-right:0.05rem solid #E7E7E7;
+	float: left;
+}
+.center>ul>li:nth-child(2){
+	border: none;
+}
+.blank{
+	width: 100%;
+	height: 0.22rem;
+	background:#F5F5F5 ;
+}
+/*天气24小时*/
+.w24-hours>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	overflow: scroll;
+}
+.w24-hours>ul>li{
+	width: 1.4rem;
+	height: 1rem;
+	margin: 0.48rem 0.2rem;
+	text-align: center;
+	float: left;
+}
+.w24-hours>ul>li>p{
+	font-size: 0.4rem;
+}
+.item{
+	font-size: 0.4rem;
+	color: #B1B1B1;
+}
+.w24-hours{
+	width: 100%;
+	height: 2.8em;
+	/*overflow: hidden;*/
+	/*align-items: center;*/
+}
+/*7天天气*/
+.w7-days{
+	width: 7.5rem;
+	height: 7.76em;
+/*	background: orange;*/
+	padding: 0.46rem 0;
+	position: relative;
+}
+.w7-days>ul{
+	width: 7.5rem;
+	height: 6.84em;
+/*	background: aquamarine;*/
+}
+.w7-days>ul>li{
+	width: 0.58em;
+	height: 6.84em;
+	text-align: center;
+	/*background: azure;*/
+	margin-left: 0.4rem;
+	float: left;
+}
+.w7-days>ul>li>p{
+	font-size: 0.2rem;
+	color: #B1B1B1;
+}
+.w-img{
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.w-change{
+	width: 7.5rem;
+	height: 1.9rem;
+	/*background: orange;*/
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+/*白天*/
+.daytime{
+	width: 0.58em;
+	height: 1rem;
+/*	background: cadetblue;*/
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.daytime>p{
+	font-size: 0.2rem;
+	color: #B1B1B1;
+}
+.daytime img{
+	width: 0.6em;
+	height: 0.6em;
+	float: left;
+}
+/*晚上*/
+.night{
+	width: 0.58em;
+	height: 1.6rem;
+/*	background: cadetblue;*/
+	margin-top: 3.8rem;
+	text-align: center;
+}
+.night>p{
+	font-size: 0.2rem;
+	color: #B1B1B1;
+}
+.night>p.cloud{
+	font-size: 0.25rem;
+	margin-bottom: 0.1rem;
+}
+.night img{
+	width: 0.6em;
+	height: 0.6em;
+	float: left;
+}
+/*网页末尾*/
+.footer{
+	width: 100%;
+	height: 3.76rem;
+	border-color: #B1B1B1;
+	/*margin-top: 0.2rem;*/
+}
+.footer>ul{
+	width: 100%;
+	height: 3.76rem;
+	border-color: #B1B1B1;
+}
+.footer>ul>li{
+	width: 1.85em;
+	height: 1.76em;
+	background: white;
+	padding: 0.1rem;
+	float: left;
+	border-right:0.02rem solid #B1B1B1; 
+	border-bottom:0.02rem solid #B1B1B1; 	
+}
+.footer>ul>li>img{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+.footer>ul>li>h1{
+	font-size: 0.3rem;
+	font-weight: 300;
+	margin-top: -0.1rem;
+}
+.footer>ul>li>p{
+	font-size: 0.24rem;
+	color: #C2C2C2;
+	margin-top: -0.15rem;
+}
+.footer>ul>li:nth-child(4n){
+	border-right: none;
+}
+.two{
+	padding-top: 0.2rem;
+	width: 100%;
+	height: 4.72rem;
+	background:#F5F5F5 ;
+	line-height: 0.6rem;
+	text-align: center;
+}
+.two>p{
+	font-size: 0.3rem;
+	color:#C2C2C2 ;
+}
+/*第二页*/
+.header{
+	width: 100%;
+	height: 1rem;
+/*	background: orange;*/
+	line-height: 0.6rem;
+/*	border-bottom: 0.02rem solid #E5E6E7;*/
+	padding: 0 0.24rem;
+	
+}
+.header>strong{
+	font-size: 0.36rem;
+}
+.search{
+	height: 0.8rem;
+	width: 100%;
+/*	background: skyblue;*/
+	padding: 0 0.24rem;
+	
+	
+}
+.input{
+	height: 100%;
+	width: 6rem;
+	line-height: 0.8rem;
+	background: #F8F8F8;
+	border-radius: 0.2rem;
+	float: left;
+	font-size: 0.24rem;
+	color: gray;
+	}
+.search>p{
+	float: left;
+	font-size: 0.2rem;
+	line-height: 0.8rem;
+	margin-left: 0.3rem;
+	color: black;
+}
+.search>input{
+	height: 100%;
+	width: 6rem;
+	line-height: 0.8rem;
+	background: #F2F2F2;
+	border-radius: 0.2rem;
+	float: left;
+	font-size: 0.24rem;
+	color: gray;
+	outline: none;
+	border: none;
+}
+/*.input>a{
+	color: #9E9E9E;
+}*/
+.input>i{   
+	font-size: 0.5rem;
+	float: left;
+	line-height:0.9rem;
+}
+.history{
+	font-size: 0.3rem;
+	padding: 0.5rem 0.24rem;
+	/*float: left;*/
+}
+.history>i{
+	float: right;
+}
+.content{
+	width: 100%;
+	height: 1rem;
+}
+.hot{
+	height: 2.6rem;
+}
+.content>ul{
+	width: 100%;
+	height: 100%;
+}
+.content>ul>li{
+	width: 2rem;
+	height: 0.5rem;
+	border-radius: 0.2rem;
+	background: #F7F7F7;
+	font-size: 0.24rem;
+	text-align: center;
+	line-height: 0.5rem;
+	float: left;
+	margin: 0 0 0.24rem 0.24rem;
+}
+.content>ul>li>a{
+	color: #000000;
+}
+.header-right{
+	width: 1.78em;
+	height: 0.5em;
+	background: white;
+	border: 0.02rem solid #9E9E9E;
+	border-radius: 0.2rem;
+	margin-top: 0.3rem;
+	float: right;
+}
+.searchpage{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	/*transform: scale(0,0);*/
+	display: none;
+	z-index: 990;
+	transition: all 1s;
+}
+.active{
+	display: block;
+	/*transform:scale(1,1);*/
+	/*transition: all 1s;*/
+}
+.center>ul>li>.weather-right span{
+	font-size: 0.3rem;
+	/*margin-bottom: 0.1rem;*/
+	float: left;
+}
+.pro{
+	font-size: 0.4rem;
+	float: left;
+	width: 100%;
+	margin-left: 0.2rem;
+}
+.scen{
+	width: 100%;
+	float: left;
+}
+
+
